@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/9c9949d027.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header id="header" class="header">
+            <div class="logo">
+                <img src="./src/logo-white.png" alt="logo" class="logo-img" id="header-img">
+            </div>
+            <nav id="nav-bar" class="nav-bar">
+                <ul>
+                    <li><a href="#feature-container" id="nav-link" class="nav-link">Features</a></li>
+                    <li><a href="#product-video" id="nav-link" class="nav-link">How it works</a></li>
+                    <li><a href="#prices" id="nav-link" class="nav-link">Pricing</a></li>
+                </ul>          
+            </nav>
+        </header>
+
+        <div class="mouse-img">
+            <img src="./src/mouse.png" alt="Mouse">
+        </div>
+
+        <div class="form-container">
+            <form action="" id="form" class="form">
+                <label for="email">Newsletter</label>
+                <input type="email" name="email" id="email" class="email" placeholder="Enter your email adress">
+                <input type="submit" name="submit" id="submit"  class="submit" value="Get started!">
+            </form>
+        </div>
+
+        <section class="feature-container" id="feature-container">
+            <div class="feature">
+                <div class="icon"><i class="fas fa-box"></i></div>
+                <div class="feature-text">
+                    <h2>Premium Materials</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum quae debitis porro labore. Odit, illum asperiores. Assumenda earum sint praesentium tempore iure quasi placeat.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="icon"><i class="fas fa-shipping-fast"></i></div>
+                <div class="feature-text">
+                    <h2>Fast Shipping</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, illum asperiores. Assumenda earum sint praesentium tempore iure quasi placeat, pariatur quidem, voluptatum adipisci perspiciatis tenetur.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="icon"><i class="fas fa-battery-full"></i></div>
+                <div class="feature-text">
+                    <h2>Quality Assurance</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum quae debitis porro labore. Odit, illum asperiores. Assumenda earum sint praesentium tempore iure quasi placeat, pariatur quidem, voluptatum adipisci perspiciatis tenetur.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-container" id="video-container">
+            <div class="video">
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/8HCex4usfsk" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section class="prices" id="prices">
+            <div class="price">
+                <div>
+                    <h3>G203 LIGHTSYNC</h3>
+                </div>
+                <p><span>$39.99</span>
+                <br/>Lorem ipsum.
+                Lorem ipsum.
+                Lorem ipsum dolor.
+                Lorem ipsum.</p>
+            </div>
+            <div class="price">
+                <div>
+                    <h3>G502 HERO</h3>
+                </div>
+                <p><span>$49.99</span>
+                <br/>Lorem ipsum.
+                Lorem ipsum.
+                Lorem ipsum dolor.
+                Lorem ipsum.</p>
+            </div>
+            <div class="price">
+                <div>
+                    <h3>G903</h3>
+                </div>
+                <p><span>$129.99</span>
+                <br/>Lorem ipsum.
+                Lorem ipsum.
+                Lorem ipsum dolor.
+                Lorem ipsum.</p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <ul>
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <span>All rights reserved to their owners.</span>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400&display=swap');
+
+
+
+/*---------------------------------------------------globalStyles*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-snap-type: y mandatory;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background-color: rgb(219, 219, 219);
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body::-webkit-scrollbar {
+	background: rgba(0, 0, 0, 0.596);
+	width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: #00b9fc5d;
+	border-radius: 3px;
+}
+
+
+
+
+
+
+/*---------------------------------------------------header*/
+
+.header {
+    width: 100vw;
+    height: 75px;
+    margin-bottom: 50px;
+    padding: 0 20px;
+    min-height: 60px;
+    position: fixed;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 60vw;
+}
+
+.logo img {
+    width: 90%;
+    height: 90%;
+    max-width: 140px;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li {
+    padding: 8px;
+    list-style: none;
+}
+
+.nav-bar ul li a {
+    color: #fff;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+@media (max-width: 730px) {
+    .header {
+        width: 100%;
+        height: 125px;
+        position: relative;
+    }
+
+    .nav-bar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-bar ul li {
+        padding: 0;
+        margin: 5px auto;
+    }
+
+    .nav-bar ul li a {
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+
+/*---------------------------------------------------centralImage*/
+
+.mouse-img {
+    margin: 150px auto 0px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.mouse-img img {
+    width: 30%;
+    min-width: 216px;
+}
+
+
+
+
+
+
+/*---------------------------------------------------form*/
+
+.form {
+    width: 20vw;
+    margin: 50px auto 50px auto;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form label {
+    margin: 10px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.form .email, .submit {
+    width: 100%;
+    min-width: 148px;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+::placeholder {
+    color: rgb(148, 148, 148);
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+}
+
+.email, .submit {
+    box-shadow: 0px 6px 10px -6px rgb(0 0 0 / 70%);
+}
+
+.email:focus {
+    outline: none;
+}
+
+.submit {
+    color: #00b8fc;
+    background-color: #000000;
+    font-size: 1em;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+}
+
+.submit:active {
+    transform: translateY(1.5px);
+    outline: none;
+}
+
+
+
+
+
+
+/*---------------------------------------------------featureContainer*/
+
+.feature-container {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature {
+    width: 60vw;
+    min-width: 400px;
+    margin: 10px;
+    display: flex;
+}
+
+.feature .icon i {
+    font-size: 2em;
+    margin: auto;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin: auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-text {
+    width: 80%;
+}
+
+.feature-text p {
+    font-size: 1.2em;
+}
+
+
+
+
+
+
+/*---------------------------------------------------videoContainer*/
+
+.video-container {
+    margin-bottom: 50px;
+}
+
+
+
+
+/*---------------------------------------------------prices*/
+
+.prices {
+    width: 60%;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.price {
+    margin: 0 15px;
+    box-shadow: 0px 6px 10px -6px rgb(0 0 0 / 70%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price div {
+    width: 100%;
+    padding: 5px;
+    color: #00b8fc;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #000000;
+}
+
+.price p span {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.price p {
+    margin: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+@media (max-width: 730px) {
+    .prices {
+        width: auto;
+    }
+
+    .price {
+        min-width: 152px;
+    }
+
+    .price div {
+        height: 70px;
+    }
+}
+
+@media (max-width: 600px) {
+    .prices {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+/*---------------------------------------------------footer*/
+
+.footer {
+    width: 100%;
+    height: 75px;
+    padding: 0 20px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.footer ul {
+    display: flex;
+    margin: 0 75px;
+}
+
+.footer ul li {
+    margin-left: 35px;
+    list-style: none;
+}
+
+.footer ul li a {
+    color: #00b8fc;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+.footer span {
+    color: #fff;
+    margin: 0 75px;
+}

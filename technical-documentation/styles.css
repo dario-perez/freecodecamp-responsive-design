@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Source+Code+Pro&display=swap');
+
+
+
+/*_____________________________________________________globalStyles*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-snap-type: y mandatory;
+}
+
+body {
+    padding-left: 25px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(218, 218, 218);
+    background-color: #34495e;
+    display: flex;
+}
+
+body::-webkit-scrollbar {
+	background: rgba(0, 0, 0, 0.596);
+	width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: #677481;
+	border-radius: 3px;
+}
+
+code {
+    padding: 30px 20px;
+    display: block;
+    font-style: italic;
+    background-color: #677481;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.9em;
+}
+
+
+
+
+
+
+/*_____________________________________________________navbar*/
+
+.navbar {
+    padding: auto 50px;
+    height: 100vh;
+    background-color: #677481;
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;    
+}
+
+.navbar header {
+    font-size: 1.3em;
+    text-align: center;
+    margin: 25px;
+}
+
+.navbar ul li {
+    padding: 10px 10px;
+    font-size: 1.1em;
+    border-top: 1px solid;
+    list-style-type: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(218, 218, 218);
+}
+
+
+
+
+
+
+/*_____________________________________________________mainSection*/
+
+.main-doc {
+    margin-left: 258px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-section {
+    margin: 30px;
+}
+
+.main-section ul li {
+    margin-left: 35px;
+}
+
+.main-section ul ul {
+    margin-left: 20px;
+}
+
+.main-section ul li a {
+    color: rgb(218, 218, 218);
+}
+
+.main-section p {
+    margin-bottom: 25px;
+}
+
+.section-header {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+/*_____________________________________________________media*/
+
+@media (max-width: 850px) {
+    body {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar {
+        margin: 0;
+        height: 200px;
+        position: relative;
+    }
+
+    .navbar ul {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .navbar ul::-webkit-scrollbar {
+        background: rgba(0, 0, 0, 0.596);
+        width: 7px;
+    }
+    
+    .navbar ul::-webkit-scrollbar-thumb {
+        background: #677481;
+        border-radius: 3px;
+    }
+
+    .main-doc {
+        margin: 0;
+        padding: 0;
+    }
+
+    code {
+        overflow: hidden;
+    }
+}

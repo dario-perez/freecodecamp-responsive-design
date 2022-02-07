@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;400&display=swap');
+
+
+
+/*-------------------------------------------------globalStyles*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    padding-top: 20px;
+    background-color: #020202;
+    font-family: 'Heebo', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+/*-------------------------------------------------typography*/
+
+.header {
+    margin: 40px;
+    font-size: 1.3em;
+    text-align: center;
+    color: rgb(214, 214, 214);
+}
+
+.description {
+    font-style: italic;
+}
+
+span {
+    font-size: 0.8em;
+}
+
+
+
+
+
+
+/*-------------------------------------------------layout*/
+
+.header {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.survey-form {
+    width: 50%;
+    padding: 40px 35px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #45403B;
+    background-color: #c6b5a4;
+    border-radius: 5px;
+}
+
+.name, .email, .age {
+    width: 100%;
+    color: #45403b9f;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+}
+
+.survey-form select {
+    width: 100%;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+}
+
+select {
+    display: block;
+    color: #45403b9f;
+}
+
+.text-area {
+    width: 100%;
+    height: 120px;
+    border: 5px;
+    font-family: 'Heebo', sans-serif;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+/*-------------------------------------------------buttons*/
+
+.submit {
+    padding: 5px;
+    width: 100%;
+    color: #3a342e;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+/*-------------------------------------------------media*/
+
+@media (max-width: 500px) {
+    .survey-form {
+        min-width: 350px;
+    }
+}
